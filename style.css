@@ -1,3 +1,85 @@
 html {
     scroll-behavior: smooth;
 }
+
+body{
+    margin: 0;
+}
+
+
+.container-menu{
+    background-color: rgb(6, 214, 6); 
+    padding: 50px;
+    
+}
+
+.container-menu h1{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    margin: 0 0 40px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#fases{
+    width: 70%;
+    margin: 30px auto;
+    
+
+}
+
+#fases h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.paises ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.paises li{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    
+}
+
+.cruzamento{
+    margin-top: 30px;
+   
+    
+}
+
+.divisao,
+.divisao2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+}
+
+
+
