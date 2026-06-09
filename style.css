@@ -11,7 +11,8 @@ h1 {
 }
 
 h2 {
-    font-family: "Montserrat", sans-serif
+    font-family: "Montserrat", sans-serif;
+    color: rgb(46, 95, 0);
 }
 
 .container-menu {
@@ -77,32 +78,35 @@ nav {
 
 }
 
-#fases {
-    width: 70%;
-    margin: 30px auto;
-
-
-}
-
-#fases h2 {
-    text-align: center;
-    font-size: 30px;
-    color: oklab(64.108% 0.03151 -0.17935);
-    margin: 10%;
-}
 
 .container-grupos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.selects {
     display: column;
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
 }
 
-. .paises ul {
-    list-style: none;
+.img-lista {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.paises ul {
     padding: 0;
     margin: 0;
-
 }
 
 .img-cruz {
