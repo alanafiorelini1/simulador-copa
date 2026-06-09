@@ -44,6 +44,15 @@ nav a{
     font-size: 30px;
 }
 
+.container-grupos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.
+
 .paises ul{
     list-style: none;
     padding: 0;
