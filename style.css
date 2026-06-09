@@ -1,14 +1,17 @@
 html {
     scroll-behavior: smooth;
+    
 }
 
 body{
     margin: 0;
+    
 }
 
 .container-menu{
     background-color: rgb(6, 214, 6); 
     padding: 50px;
+    border-radius: 5%;
 }
 
 .container-menu h1{
@@ -16,7 +19,7 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    color: aliceblue;
+    color: rgb(239, 241, 243);
     margin: 0 0 40px 0;
 }
 
@@ -24,6 +27,7 @@ nav{
     display: flex;
     justify-content: center;
     gap: 30px;
+    
 }
 
 nav a{
@@ -32,6 +36,15 @@ nav a{
     font-family: Arial, sans-serif;
 }
 
+
+.fases-grupos{
+    color: rgb(3, 3, 3);
+    text-align: center;
+    font-size: 30px;
+    margin: 6%;
+    font-size: 40px;
+
+}
 #fases{
     width: 70%;
     margin: 30px auto;
@@ -42,6 +55,8 @@ nav a{
 #fases h2{
     text-align: center;
     font-size: 30px;
+    color: oklab(64.108% 0.03151 -0.17935);
+    margin: 10%;
 }
 
 .container-grupos{
@@ -93,6 +108,7 @@ nav a{
     border-radius: 8px;
 
 }
+
 
 
 
