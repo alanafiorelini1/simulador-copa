@@ -17,8 +17,7 @@ h2 {
 
 .container-menu {
     background-color: rgb(25, 175, 25);
-    padding: 50px;
-    border-radius: 5%;
+    padding: 1.5rem;
 }
 
 .container-menu h1 {
@@ -44,6 +43,24 @@ nav {
     padding: 0.4rem 0;
     gap: 3rem;
 }
+nav a {
+    color: #ffffff;
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+    border-radius: 2.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 230, 0, 0.877);
+    transform: scale(1.05);
+}
 
 .container-menu {
     display: flex;
@@ -67,15 +84,16 @@ nav {
 .titulo {
     font-size: 2.5rem;
     text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: rgb(0, 90, 5);
 }
 
 .fases-grupos {
-    color: rgb(3, 3, 3);
+    color: rgb(0, 12, 122);
     text-align: center;
     font-size: 30px;
     margin: 6%;
-    font-size: 40px;
-
+    font-family: 'Fira Sans', sans-serif;
 }
 
 
@@ -94,7 +112,24 @@ nav {
     color: #333;
 }
 
+select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 10px;
+}
 
+option {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .img-lista {
     width: 30px;
@@ -122,13 +157,10 @@ li {
     padding: 15px;
     border-bottom: 1px solid #ddd;
     font-size: 18px;
-
 }
 
 .cruzamento {
     margin-top: 30px;
-
-
 }
 
 .divisao,
