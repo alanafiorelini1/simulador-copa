@@ -83,6 +83,7 @@ nav {
     display: column;
     justify-content: center;
     gap: 20px;
+    padding: 3rem;
     margin-top: 30px;
 }
 
