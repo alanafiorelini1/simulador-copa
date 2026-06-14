@@ -4,29 +4,17 @@ html {
 
 body {
     margin: 0;
+    background-color: #f4f6f8; /* Um fundo levemente acinzentado para destacar os cards */
+    font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    font-family: "Montserrat", sans-serif
+    font-family: "Montserrat", sans-serif;
 }
 
 h2 {
     font-family: "Montserrat", sans-serif;
     color: rgb(46, 95, 0);
-}
-
-.container-menu {
-    background-color: rgb(25, 175, 25);
-    padding: 1.5rem;
-}
-
-.container-menu h1 {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: rgb(239, 241, 243);
-    margin: 0 0 40px 0;
 }
 
 header {
@@ -37,17 +25,24 @@ header {
     padding: 0.3rem 0;
 }
 
+.container-menu {
+    background-color: rgb(25, 175, 25);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 nav {
     display: flex;
     align-items: center;
     padding: 0.4rem 0;
     gap: 3rem;
 }
+
 nav a {
     color: #ffffff;
     font-weight: 500;
-    font-style: normal;
-    font-optical-sizing: auto;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     padding: 0.4rem 0.7rem;
@@ -58,27 +53,9 @@ nav a {
 }
 
 nav a:hover {
+    color: #000000;
     background-color: rgba(255, 230, 0, 0.877);
     transform: scale(1.05);
-}
-
-.container-menu {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.container-menu a {
-    color: #ffffff;
-    font-weight: 500;
-    font-style: normal;
-    font-optical-sizing: auto;
-    text-decoration: none;
-    padding: 0.4rem 0.7rem;
-    border-radius: 13px;
-    margin-left: 0.5rem;
-    font-size: 1.3rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .titulo {
@@ -86,49 +63,51 @@ nav a:hover {
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
     color: rgb(0, 90, 5);
+    margin-top: 30px;
 }
 
 .fases-grupos {
     color: rgb(0, 12, 122);
     text-align: center;
     font-size: 30px;
-    margin: 6%;
+    margin: 4% 0;
     font-family: 'Fira Sans', sans-serif;
 }
 
-
 .container-grupos {
-    display: column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 20px;
     padding: 3rem;
-    margin-top: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.selects {
-    padding: 1.5rem;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    color: #333;
+.paises {
+    background-color: #ffffff;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    padding: 20px 20px 0 20px;
 }
 
-select {
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    margin-top: 10px;
+.paises h2 {
+    margin-top: 0;
 }
 
-option {
-    padding: 0.5rem;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+.paises ul {
+    padding: 0;
+    margin: 0;
 }
 
-label {
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
+.paises li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .img-lista {
@@ -138,42 +117,137 @@ label {
     margin-right: 10px;
 }
 
-li {
+.selects {
+    padding: 1.5rem;
+    border-radius: 0 0 8px 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
 }
 
-.paises ul {
-    padding: 0;
+option {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.secao-titulo-fase {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.container-chaveamento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.card-confronto {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    gap: 12px;
+}
+
+.linhas-times {
+    background-color: #e0e0e0; 
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.linha-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #ededed; 
+    transition: background-color 0.2s ease;
+}
+
+.nome-time {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-gols {
+    width: 45px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+.input-gols::-webkit-outer-spin-button,
+.input-gols::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     margin: 0;
 }
-
-.img-cruz {
-    width: 50px;
-    height: 30px;
-    object-fit: cover;
+.input-gols {
+    -moz-appearance: textfield;
 }
 
-.paises li {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-    font-size: 18px;
+
+.linha-time.vencedor {
+    background-color: #a8ffb2 !important; 
 }
 
-.cruzamento {
-    margin-top: 30px;
+.linha-time.perdedor {
+    background-color: #dbdbdb !important;
 }
 
-.divisao,
-.divisao2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    padding: 15px;
-    margin-bottom: 15px;
-
-    border: 1px solid #ddd;
+.btn-confirmar {
+    background-color: #121212;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
     border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
 
+.btn-confirmar:hover:not(:disabled) {
+    background-color: #2b2b2b;
+}
+
+.btn-confirmar:disabled {
+    background-color: #cccccc;
+    color: #777777;
+    cursor: not-allowed;
 }
